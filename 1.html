@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>接口</title>
+		<link rel="stylesheet" type="text/css" href="static/css/aui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="static/css/aui.popover.css"/>
+		<script type="text/javascript" src="static/js/aui.min.js"></script>		
+		<script type="text/javascript" src="static/js/aui.popover.js"></script>
+		<style type="text/css">
+			.aui-content{padding: 0 0 55px 0;}
+			.content-top{width: 100%; padding: 20px; box-sizing: border-box;}
+			.content-top h2{width: 100%; line-height: 40px; font-size: 18px; color: #333;}
+			.content-top p{width: 100%; line-height: 20px; font-size: 13px; color: #888;}			
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header class="aui-header">
+				<!--<a class="aui-header-left" onclick="aui.closeWin()"><i class="iconfont iconreturn"></i></a>-->
+				<div class="aui-header-title" style="left: 15px;">接口</div>
+				<a class="aui-header-right" onclick=""><i class="iconfont iconother"></i></a>
+			</header>
+			<div class="aui-content">
+				<div class="content-top">
+					<h2>Api</h2>
+					<p>api接口，常用弹窗插件</p>
+				</div>
+				<div class="aui-lists">
+					<div class="aui-list" onclick="aui.openWin('pages/api/devices/devices-index.html')">
+						<div class="aui-list-left"><img src="static/img/index-0.png" alt="">设备</div>
+						<div class="aui-list-right"><i class="iconfont aui-btn-right iconright1"></i></div>
+					</div>
+					<div class="aui-list" onclick="aui.openWin('pages/api/events/event-index.html')">
+						<div class="aui-list-left"><img src="static/img/index-1.png" alt="">事件</div>
+						<div class="aui-list-right"><i class="iconfont aui-btn-right iconright1"></i></div>
+					</div>
+					<div class="aui-list" onclick="aui.openWin('pages/api/plugs/plugs-index.html')">
+						<div class="aui-list-left"><img src="static/img/index-2.png" alt="">插件</div>
+						<div class="aui-list-right"><i class="iconfont aui-btn-right iconright1"></i></div>
+					</div>
+					<div class="aui-list" onclick="aui.openWin('pages/api/address/address-index.html')">
+						<div class="aui-list-left"><img src="static/img/index-3.png" alt="">位置</div>
+						<div class="aui-list-right"><i class="iconfont aui-btn-right iconright1"></i></div>
+					</div>
+					<div class="aui-list" onclick="aui.openWin('pages/api/service/service-index.html')">
+						<div class="aui-list-left"><img src="static/img/index-4.png" alt="">客服</div>
+						<div class="aui-list-right"><i class="iconfont aui-btn-right iconright1"></i></div>
+					</div>
+				</div>
+			</div>
+			<footer class="aui-footer row-before">
+				<div class="aui-footer-list active" onclick="aui.openWin('index.html')"><i class="iconfont iconapi"></i><p>接口</p></div>
+				<div class="aui-footer-list" onclick="aui.openWin('pages/ui/index.html')"><i class="iconfont iconui"></i><p>组件</p></div>
+				<div class="aui-footer-list" onclick="aui.openWin('pages/template/index.html')"><i class="iconfont icontamplate"></i><p>模板</p></div>
+				<a class="aui-footer-list" target="_blank" href="https://www.kancloud.cn/chen-wanchun/aui-js"><i class="iconfont icondoc"></i><p>文档</p></a>
+			</footer>
+		</div>
+	</body>
+	<script type="text/javascript">		
+		window.addEventListener("load", function(){			
+			var lists = document.querySelectorAll(".aui-list");
+			for(var i = 0; i < lists.length; i++){
+				aui.touchDom(lists[i], "#EFEFEF");
+			}
+			//打开菜单弹窗(右上角——>按钮下方)
+			document.querySelector(".aui-header-right").addEventListener("click", function(){
+				aui.popover.open({
+					warp: '.aui-header-right',
+					items: [
+						{name: 'AUI文档', icon: 'iconchakan-yunpan', iconColor: '#8BC34A'},
+						{name: 'GIT仓库', icon: 'iconGit', iconColor: '#909090'},
+						{name: 'CSDN博客', icon: 'iconcsdn', iconColor: '#d81e06'},
+						{name: '生成二维码', icon: 'iconerweima', iconColor: '#12986D'},
+					],
+					mask: true,
+					location: 'bottom'
+				},function(ret){
+					//console.log(ret);
+					switch (ret.index){
+						case 0:
+							aui.openWin('https://www.kancloud.cn/chen-wanchun/aui-js');
+							break;
+						case 1:
+							aui.openWin('https://github.com/aui-js/aui');
+							break;
+						case 2:
+							aui.openWin('https://me.csdn.net/weixin_43838488');
+							break;
+						case 3:
+							aui.openWin('pages/template/qrcode/QRCode.html');
+							break;
+						default:
+							aui.toast({msg: ret.el.querySelector("span").innerHTML});
+							break;
+					}
+				})
+			});
+		});
+	</script>
+</html>

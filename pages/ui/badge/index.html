@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../../../static/css/aui.min.css"/>
+		<title>Badge数字角标</title>
+		<style>
+			.aui-content{padding: 0;}
+			.content-top{width: 100%; line-height: 25px; padding: 20px 15px; box-sizing: border-box; font-size: 14px; color: #aaa;}
+		</style>
+	</head>
+	<body>		
+	    <div class="container" id="app">
+			<header class="aui-header">
+				<a class="aui-header-left" onclick="aui.closeWin()"><i class="iconfont iconreturn"></i></a>
+				<div class="aui-header-title">Badge数字角标</div>
+			</header>
+	    	<div class="aui-content" v-cloak>
+				<div class="content-top">
+					Badge数字角标通常用来标记重要信息，如接收到新消息、有未读消息等。
+				</div>
+				<ul class="aui-card">
+					<div class="aui-card-title"><span class="aui-card-title-line"></span>实心数字角标</div>
+					<li class="aui-card-main">
+						<span class="aui-badge aui-badge-gray">1</span>
+						<span class="aui-badge aui-badge-blue">2</span>
+						<span class="aui-badge aui-badge-success">33</span>
+						<span class="aui-badge aui-badge-waring">44</span>
+						<span class="aui-badge aui-badge-error">123</span>
+					</li>
+				</ul>
+				<ul class="aui-card">
+					<div class="aui-card-title"><span class="aui-card-title-line"></span>空心数字角标</div>
+					<li class="aui-card-main">
+						<span class="aui-badge aui-badge-nobg aui-badge-gray">1</span>
+						<span class="aui-badge aui-badge-nobg aui-badge-blue">2</span>
+						<span class="aui-badge aui-badge-nobg aui-badge-success">33</span>
+						<span class="aui-badge aui-badge-nobg aui-badge-waring">44</span>
+						<span class="aui-badge aui-badge-nobg aui-badge-error">123</span>
+					</li>
+				</ul>
+				<ul class="aui-card">
+					<div class="aui-card-title"><span class="aui-card-title-line"></span>迷你数字角标</div>
+					<li class="aui-card-main">
+						<span class="aui-badge aui-badge-small aui-badge-gray">1</span>
+						<span class="aui-badge aui-badge-nobg aui-badge-small aui-badge-blue">2</span>
+						<span class="aui-badge aui-badge-small aui-badge-success">33</span>
+						<span class="aui-badge aui-badge-nobg aui-badge-small aui-badge-waring">44</span>
+						<span class="aui-badge aui-badge-small aui-badge-error">123</span>
+					</li>
+				</ul>	
+	    	</div>
+	    </div>
+		<script type="text/javascript" charset="utf-8" src="https://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
+	    <script type="text/javascript" src="../../../lib/vue.min.js"></script>
+	    <script type="text/javascript" src="../../../lib/jquery/jquery-2.1.3.min.js"></script>
+	    <script type="text/javascript" src="../../../static/js/aui.min.js"></script>
+	   	<script type="text/javascript">
+	   		window.onload = function(){				
+	   			apiready();
+	   		}
+	   		apiready = function() {
+	   			var vm = new Vue({
+	   				el: "#app",
+	   				data: {	
+						lists: [],	   					
+	   				},
+	   				created: function(){
+	   					var _this = this;
+	   				},
+	   				mounted: function() {
+	   					var _this = this;	
+						
+	   	            },
+	   	            updated: function () {
+	   	                var _this = this;
+	   	                _this.$nextTick(function () {
+	   		
+	   	                })
+	   	            },
+	   	            methods: {
+						
+	   	            }
+	   			});
+	   		}
+	   	</script>
+	</body>
+</html>

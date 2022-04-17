@@ -1,0 +1,1895 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>FOMO3D OK WINNER</title>
+		<link rel="stylesheet" type="text/css" href="static/css/aui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="static/css/aui.popover.css"/>
+		<link rel="stylesheet" type="text/css" href="lib/swiper/swiper.min.css" />
+		
+
+		<style type="text/css">
+			.aui-content{padding: 0 0 55px 0;}
+			.aui-content-top{width: 100%; height: 250px; font-size: 0; background: rgb(48, 49, 51); position: relative;}
+			/* Animation */
+			.contnet-top-animation{width: 100%; position: absolute; bottom: 0; left: 0}
+			.parallax > use {opacity: 0.9;animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;}
+			.waves {position:relative; width: 100%; height:15vh; min-height:100px; max-height:150px;}
+			.parallax > use:nth-child(1) {animation-delay: -2s;animation-duration: 7s;}
+			.parallax > use:nth-child(2) {animation-delay: -3s; animation-duration: 10s;}
+			.parallax > use:nth-child(3) {animation-delay: -4s;animation-duration: 13s;}
+			.parallax > use:nth-child(4) {animation-delay: -5s; animation-duration: 20s;}
+			@keyframes move-forever {
+			  0% {transform: translate3d(-90px,0,0);}
+			  100% {transform: translate3d(85px,0,0);}
+			}
+			/*Shrinking for mobile*/
+			@media (max-width: 768px) {
+			  .waves {height:50px; min-height:40px; }
+			  h1 {font-size:24px;}
+			}
+
+
+
+
+			.aui-nav{width: 100%; height: 50px; overflow-x: scroll; padding: 0; box-sizing: border-box; background: #FFF; display: inline-block; position: relative; z-index: 1;}						
+			.aui-nav::-webkit-scrollbar {height: 0px;}
+			.aui-nav-items{width: auto; display: inline-block; white-space: nowrap; background: #FFF; padding: 0 10px;}
+			.aui-nav-item{height: 100%; line-height: 50px; font-size: 16px; padding: 0 10px; color: #333; box-sizing: border-box; display: inline-block; vertical-align: top;}
+			.aui-nav-item.active{color: var(--aui-blue); font-size: 17px;}
+			.aui-nav-border{width: 68px; height: 2px; -webkit-transition: all .3s; transition: all .3s; background: var(--aui-blue); border-radius: 10px; display: inline-block; position: absolute; bottom: 0; left: 0%;}
+			
+			.page-lists{width: 100%;}
+			.page-list{width: 100%; height: -webkit-calc(100vh - 122px); height: calc(100vh - 122px); display: none; overflow-y: scroll;}
+			.page-list.active{display: inline-block;}
+			.page-list p{width: 100%; line-height:30px; text-align: center;}
+			
+.aui-noticebar-main {
+    width: 100%;
+    line-height: 22px;
+    padding: 10px 15px 8px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    box-sizing: border-box;
+    font-size: 14px;
+    background: #ecf5ff;
+    color: #0d1a75;
+}			
+
+
+
+			.clipboard-warp{width: 100%; font-size: 0; margin-top: 40px;}
+			#text{width: -webkit-calc(100% - 80px); width: calc(100% - 80px); height: 50px; background: #F4F4F4; border-radius: 10px 0 0 10px; display: inline-block; vertical-align: middle;}
+			#text:after{border-radius: 20px 0 0 20px;}
+			#text input{width: 100%; height: 100%; font-size: 14px; padding: 0 15px; box-sizing: border-box; border: none; background: transparent; position: relative; z-index: 2;}			
+			.copy-btn{width: 80px; height: 50px; margin: 0 0 0 0; text-align: center; background: var(--aui-blue); border-radius: 0px 10px 10px 0px; color: #FFF; display: inline-block; vertical-align: middle;}
+			.copy-btn span{display: inline-block; margin: 0 0 0 5px; vertical-align: top;}
+			
+
+			.invite_content-top{width: 100%; line-height: 25px; padding: 20px 15px; box-sizing: border-box; font-size: 14px; color: #aaa;}
+
+.aui-grid-icon img{width:32px;height:32px;}	
+
+.team_active,.pay_active{border:1px solid #fec002;}	
+
+.aui-grid{padding:5px}	
+
+.aui-grid::after{height:0px !important};
+			
+		</style>
+	</head>
+	<body>
+		<div class="container"  >
+			<header class="aui-header">
+				<a class="aui-header-left" onclick="aui.closeWin()"><i class="iconfont icondaojishi" style="font-size: 15px; color: #fff;margin:auto 3px"></i><span style="font-size: 14px; color: #fff;" class="count_down"  id="count_down1">...</span></a>
+
+				
+				<div class="aui-header-title" style="left: 15px;font-size:13px;">		
+				
+				<i class="iconfont iconcolor" style="color: #fff;"></i> <span class="top_seeds_count"></span> 
+				
+				<i class="iconfont iconselect_fill" style="color: #fff;"></i> <span class="top_airdrop_percent"> </span> (<span class="top_airdrop_amount"> </span>)
+				
+				</div>
+				<a class="aui-header-right" onclick=""><i class="iconfont iconother"></i></a>
+			</header>
+			<div class="aui-content" id="app" v-cloak  >
+ 
+				
+
+				<div class="aui-content-top">
+					<div class="contnet-top-animation">
+						<svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+							<defs>
+								<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+							</defs>
+							<g class="parallax">
+								<use xlink:href="#gentle-wave" x="48" y="1" fill="rgba(255,255,255,1" />
+								<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.7)" />
+								<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.5)" />
+								<use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(255,255,255,0.3)" />
+							</g>
+						</svg>
+					</div>
+					
+					
+
+				 
+				<div class="aui-card" style="padding: 0px 0; opacity: 0.5;">
+					<!-- <div class="aui-card-title"><span class="aui-card-title-line"></span>scroll</div> -->
+					<div class="aui-card-main" style="padding: 0px 0; color:#fff">						
+ 
+						<div class="aui-noticebar aui-noticebar-col">
+							<div class="aui-noticebar-main">
+								<div class="aui-noticebar-left"><i class="iconfont iconsystemprompt"></i></div>
+								<div class="aui-noticebar-center">
+									<div class="aui-noticebar-texts">
+										<div class="swiper-container">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<p class="aui-noticebar-text">K0/OK FOMO3D游戏将于2022/04/17 22:18:00上线</p>
+												</div>
+												<!--<div class="swiper-slide">-->
+												<!--	<p class="aui-noticebar-text">恭喜0x...6784获得空投1.1 BNB</p>-->
+												<!--</div>-->
+												<!--<div class="swiper-slide">-->
+												<!--	<p class="aui-noticebar-text">恭喜0x...d0d6获得空投1.2 BNB</p>-->
+												<!--</div>-->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="bonus_wrap" style="height:60px;margin:30px auto;width:80%;text-align:center;">
+				<!-- <i class="iconfont iconbadge" style="font-size: 38px;line-height:40px; color: #fec002;margin:auto 3px"></i> -->
+				<img src="static/img/BNB.png" alt="" style="width:46px;vertical-align:bottom">
+				<span style="font-size: 36px;line-height:40px; color: #fec002;" class="prize_pool">...</span>
+				</div>
+
+				<div class="count_down_wrap" style="height:40px;margin:0 auto;width:80%;text-align:center;">
+				<i class="iconfont icondaojishi" style="font-size: 38px; color: #ccc;margin:auto 3px"></i>
+				<span style="font-size: 36px; color: #ccc;" class="count_down" id="count_down2">...</span>				
+				</div>
+
+
+				
+				</div>
+
+				
+
+
+				<nav class="aui-nav row-after">
+					<div class="aui-nav-items">
+						<div class="aui-nav-item" :class="{'active' : currentNavIndex==0}" index="0" @click.stop="changeNav($event)">购买种子</div>
+						<div class="aui-nav-item" :class="{'active' : currentNavIndex==1}" index="1" @click.stop="changeNav($event)">我的金库</div>					
+						<div class="aui-nav-item" :class="{'active' : currentNavIndex==2}" index="2" @click.stop="changeNav($event)">空投奖励</div>					
+						<div class="aui-nav-item" :class="{'active' : currentNavIndex==3}" index="3" @click.stop="changeNav($event)">邀请好友</div>
+						<!-- <div class="aui-nav-item" :class="{'active' : currentNavIndex==4}" index="4" @click.stop="changeNav($event)">已评价</div> -->
+						<!-- <div class="aui-nav-item" :class="{'active' : currentNavIndex==5}" index="5" @click.stop="changeNav($event)">已退款</div> -->
+						<span class="aui-nav-border"></span>
+					</div>
+				</nav>
+				<div class="page page-lists">
+					<div class="page-list" :class="{'active' : currentNavIndex==0}">
+						<ul class="lists">
+						<div class="aui-card">
+						
+						<div class="aui-card-title"><span class="aui-card-title-line"></span>1购买种子数量  当前价格@<img   style="width:18px;margin-left:8px;vertical-align:middle" src="static/img/BNB.png" alt=""/> <span class="getprice">...</span>  </div>
+
+							<div class="aui-grids" >
+												<div class="aui-grid aui-col-xs-5 pay_amount1" onclick="select_pay_amount('1')">
+													<div class="aui-grid-icon" style="margin:0"><i class="iconfont iconcolor" style="color: #ccc;"></i></div>
+													<div class="aui-grid-text">X 1</div>
+													<div class="aui-grid-text pay_desc1"></div>					
+	
+												</div>
+												
+ 
+												
+												
+												<div class="aui-grid aui-col-xs-5 pay_amount10" onclick="select_pay_amount('10')">
+													<div class="aui-grid-icon" style="margin:0"><i class="iconfont iconcolor" style="color: #ccc;"></i></div>
+													<div class="aui-grid-text">X 10</div>
+													<div class="aui-grid-text pay_desc10"></div>													
+												</div>
+												
+												
+												<div class="aui-grid aui-col-xs-5 pay_amount100" onclick="select_pay_amount('100')">
+													<div class="aui-grid-icon" style="margin:0"><i class="iconfont iconcolor" style="color: #ccc;"></i></div>
+													<div class="aui-grid-text">X 100</div>
+													<div class="aui-grid-text pay_desc100"></div>													
+												</div>
+												
+
+												<div class="aui-grid aui-col-xs-5 pay_amount1000" onclick="select_pay_amount('1000')">
+													<div class="aui-grid-icon" style="margin:0"><i class="iconfont iconcolor" style="color: #ccc;"></i></div>
+													<div class="aui-grid-text">X 1000</div>
+													<div class="aui-grid-text pay_desc1000"></div>													
+												</div>												
+
+
+												<div class="aui-grid aui-col-xs-5 pay_amount10000" onclick="select_pay_amount('10000')">
+													<div class="aui-grid-icon" style="margin:0"><i class="iconfont iconcolor" style="color: #ccc;"></i></div>
+													<div class="aui-grid-text">X 10000</div>
+													<div class="aui-grid-text pay_desc10000"></div>													
+												</div>	
+
+
+ 
+
+												
+												
+												<input type="hidden" name="pay_amount" id="pay_amount"  value="0.001" />
+							 
+							</div>	
+
+							
+						
+						<div class="aui-card-title"><span class="aui-card-title-line"></span>2选择一个战队</div>
+						
+						
+							<div class="aui-grids">
+												<div class="aui-grid aui-col-xs-3 snake_team" onclick="select_team('snake')">
+													<div class="aui-grid-icon"><img src="static/img/snake.png" alt=""></div>
+													<div class="aui-grid-text">贪吃蛇</div>
+													<div class="aui-grid-text">分红最多</div>					
+	
+												</div>
+												
+												
+												<div class="aui-grid aui-col-xs-3 rooster_team" onclick="select_team('rooster')">
+													<div class="aui-grid-icon"><img src="static/img/rooster.png" alt=""></div>
+													<div class="aui-grid-text">铁公鸡</div>
+													<div class="aui-grid-text">奖池最大</div>													
+												</div>
+												
+												
+												<div class="aui-grid aui-col-xs-3 ox_team" onclick="select_team('ox')">
+													<div class="aui-grid-icon"><img src="static/img/ox.png" alt=""></div>
+													<div class="aui-grid-text">老黄牛</div>
+													<div class="aui-grid-text">平均分配</div>													
+												</div>
+												
+												<input type="hidden" name="team_type" id="team_type"  value="rooster" />
+							 
+							</div>	
+
+ 
+				
+				<div class="aui-card-title"  style="font-size:12px;height:44px;line-height:44px;padding: 0 0px 0 10px;border-bottom:1px solid #e4e7ed">购买≥0.1BNB种子有 <span class="mid_airdrop_percent1">88.6%</span>概率获得<span class="mid_airdrop_amount">1.2</span>BNB空投奖励的一部分</div>
+
+							<div class="aui-card-title"><span class="aui-card-title-line"></span>3请先任选OK/K0支付一次门票 然后BNB购买种子</div>
+							<div class="aui-card-main" style="padding: 0;">
+								<ul class="aui-lists">
+								    
+								    
+
+								<div class="aui-list OK_paytype" onclick="select_pay('OK')">
+									<div class="aui-list-left"><img src="static/img/OK.png" alt="">OK支付门票<span class="isbuyTicket"></span></div>
+									<div class="aui-list-right"><i class="iconfont aui-btn-right iconright1"></i></div>
+								</div>
+								
+								
+								<div class="aui-list K0_paytype" onclick="select_pay('K0')">
+									<div class="aui-list-left"><img src="static/img/K0.png" alt="">K0支付门票<span class="isbuyTicket"></span></div>
+									<div class="aui-list-right"><i class="iconfont aui-btn-right iconright1"></i></div>
+								</div>
+								
+								<div class="aui-list BNB_paytype" onclick="select_pay('BNB')">
+									<div class="aui-list-left"><img src="static/img/BNB.png" alt="">BNB购买种子</div>
+									<div class="aui-list-right"><i class="iconfont aui-btn-right iconright1"></i></div>
+								</div>								
+								
+								<!-- <div class="aui-list" onclick="aui.openWin('pages/api/plugs/plugs-index.html')"> -->
+									<!-- <div class="aui-list-left"><img src="static/img/index-2.png" alt="">分红收益</div> -->
+									<!-- <div class="aui-list-right"><i class="iconfont aui-btn-right iconright1"></i></div> -->
+								<!-- </div> -->
+
+								</ul>
+								
+								
+								
+								<input type="hidden" name="pay_type" id="pay_type"  value="BNB" />
+								
+								
+							</div>
+							
+							
+ 
+				<div class="aui-card-title"  style="font-size:12px;height:44px;line-height:44px;padding: 0 0px 0 10px;"><i class="iconfont iconsystemprompt"></i>支付后需要等待链上确认，请提前操作，祝您中大奖，一战自由</div>						
+						
+							<div class="aui-card-title" style="border-top:1px solid #ccc"><span class="aui-card-title-line" ></span>战队统计</div>
+							<div class="aui-card-main" style="padding: 0;">
+								<ul class="aui-lists">
+
+
+								<!--<div class="aui-list" onclick="">-->
+								<!--	<div class="aui-list-left"><img src="static/img/index-0.png" alt="">累计收益</div>-->
+								<!--	<div class="aui-list-right"><span class="all_income">8.8 BNB</span><i class="iconfont aui-btn-right iconright1"></i></div>-->
+								<!--</div>-->
+
+								<div class="aui-list" onclick="">
+									<div class="aui-list-left"><img src="static/img/snake.png" alt="">贪吃蛇</div>
+									<div class="aui-list-right"><span class="team1_all"> BNB</span><img   style="width:18px;margin-left:8px;vertical-align:middle" src="static/img/BNB.png" alt=""/></div>
+								</div>
+								
+								
+								
+								<div class="aui-list" onclick="">
+									<div class="aui-list-left"><img src="static/img/rooster.png" alt="">铁公鸡</div>
+									<div class="aui-list-right"><span class="team2_all"> BNB</span><img   style="width:18px;margin-left:8px;vertical-align:middle" src="static/img/BNB.png" alt=""/></div>
+								</div>
+								
+								<div class="aui-list" onclick="">
+									<div class="aui-list-left"><img src="static/img/ox.png" alt="">老黄牛</div>
+									<div class="aui-list-right"><span class="team3_all"> BNB</span><img   style="width:18px;margin-left:8px;vertical-align:middle" src="static/img/BNB.png" alt=""/></div>
+								</div>
+
+								</ul>
+							</div>
+							
+							
+							
+							
+						</div>
+						
+
+						<div class="aui-card">
+							<div class="aui-card-title"><span class="aui-card-title-line"></span>投资统计</div>
+							<div class="aui-card-main" style="padding: 0;">
+								<ul class="aui-lists">
+
+								<div class="aui-list" onclick="">
+									<div class="aui-list-left"><img src="static/img/index-0.png" alt="">我的累计投资</div>
+									<div class="aui-list-right"><span class="all_invest"> BNB</span><img   style="width:18px;margin-left:8px;vertical-align:middle" src="static/img/BNB.png" alt=""/></div>
+								</div>
+								<div class="aui-list" onclick="withdraw()">
+									<div class="aui-list-left"><img src="static/img/BNB.png" alt="">我的可用收益</div>
+									<div class="aui-list-right"><span class="all_divide"> BNB</span><img   style="width:18px;margin-left:8px;vertical-align:middle" src="static/img/BNB.png" alt=""/></div>
+								</div>
+								<!-- <div class="aui-list" onclick="aui.openWin('pages/api/plugs/plugs-index.html')"> -->
+									<!-- <div class="aui-list-left"><img src="static/img/index-2.png" alt="">分红收益</div> -->
+									<!-- <div class="aui-list-right"><i class="iconfont aui-btn-right iconright1"></i></div> -->
+								<!-- </div> -->
+
+								</ul>
+							</div>
+						</div>
+
+						
+						
+						</ul>
+					</div>
+					<div class="page-list" :class="{'active' : currentNavIndex==1}">
+						<ul class="lists">
+							<div class="aui-lists">
+							    
+							    
+								<!--<div class="aui-list" onclick="aui.openWin('pages/api/devices/devices-index.html')">-->
+								<!--	<div class="aui-list-left"><img src="static/img/BNB.png" alt="">累计收益</div>-->
+								<!--	<div class="aui-list-right"><span class="all_income">8.8 BNB</span><i class="iconfont aui-btn-right iconright1"></i></div>-->
+								<!--</div>-->
+
+
+								<div class="aui-list" onclick="">
+									<div class="aui-list-left"><i class="iconfont aui-btn-right iconcolor"></i>我的种子</div>
+									<div class="aui-list-right"><span class="myseeds"></span><i class="iconfont aui-btn-right iconright1"></i></div>
+								</div>
+								
+								
+								
+
+								<div class="aui-list" onclick="">
+									<div class="aui-list-left"><img src="static/img/BNB.png" alt="">奖励收益</div>
+									<div class="aui-list-right"><span class="bigwin_income"> BNB</span><i class="iconfont aui-btn-right iconright1"></i></div>
+								</div>
+								
+								
+								
+								<div class="aui-list" onclick="">
+									<div class="aui-list-left"><img src="static/img/BNB.png" alt="">邀请收益</div>
+									<div class="aui-list-right"><span class="invite_income"> BNB</span><i class="iconfont aui-btn-right iconright1"></i></div>
+								</div>
+								<div class="aui-list" onclick="">
+									<div class="aui-list-left"><img src="static/img/BNB.png" alt="">分红收益</div>
+									<div class="aui-list-right"><span class="divide_income"> BNB</span><i class="iconfont aui-btn-right iconright1"></i></div>
+								</div>
+								<!-- <div class="aui-list" onclick="aui.openWin('pages/api/address/address-index.html')"> -->
+									<!-- <div class="aui-list-left"><img src="static/img/index-3.png" alt="">1111</div> -->
+									<!-- <div class="aui-list-right"><i class="iconfont aui-btn-right iconright1"></i></div> -->
+								<!-- </div> -->
+								<div class="aui-list" onclick="withdraw()">
+									<div class="aui-list-left"><img src="static/img/JSRCU.png" alt="">提现收益</div>
+									<div class="aui-list-right"><span class="unwithdraw_income"> BNB</span><i class="iconfont aui-btn-right iconright1"></i></div>
+								</div>
+
+							<li class="aui-list">
+								<div class="aui-list-left"><i class="iconfont iconsystemprompt"></i>所有收益自动及时到账，可以随时提现</div>
+							</li>								
+								
+							</div>
+						</ul>
+					</div>
+					<div class="page-list" :class="{'active' : currentNavIndex==2}">
+						<ul class="lists">
+							<div class="aui-lists">
+							    
+								<div class="aui-list" onclick="">
+									<div class="aui-list-left"><img src="static/img/BNB.png" alt="">空投奖池累计</div>
+									<div class="aui-list-right"><span class="top_airdrop_amount"></span> <img   style="width:18px;margin-left:8px;vertical-align:middle" src="static/img/BNB.png" alt=""/> </div>
+								</div>							    
+							    
+								<div class="aui-list" onclick="">
+									<div class="aui-list-left"><img src="static/img/BNB.png" alt="">空投BNB说明</div>
+									<div class="aui-list-right"><i class="iconfont aui-btn-right iconright1"></i></div>
+								</div>
+
+							<li class="aui-list aui-list-left aui-list-disabled1111">
+								<div class="aui-list-left">所有玩家总投资金额的10%进入空投奖池。玩家每次购买种子≥0.1BNB  有1%概率获得空投</div>
+							</li>						
+						
+							<li class="aui-list">
+								<div class="aui-list-left">订单金额≥0.1 BNB，每次空投可以获得当前空投奖池10%奖励</div>
+							</li>
+
+							<li class="aui-list">
+								<div class="aui-list-left">订单金额≥1 BNB，每次空投可以获得当前空投奖池30%奖励</div>
+							</li>
+							
+							<li class="aui-list">
+								<div class="aui-list-left">订单金额≥10 BNB，每次空投可以获得当前空投奖池60%奖励</div>
+							</li>							
+							
+								<!--<div class="aui-list" onclick="">-->
+								<!--	<div class="aui-list-left"><img src="static/img/index-1.png" alt="">我的空投</div>-->
+								<!--	<div class="aui-list-right"><i class="iconfont aui-btn-right iconright1"></i></div>-->
+								<!--</div>-->
+		 
+							</div>
+						</ul>
+					</div>
+					<div class="page-list" :class="{'active' : currentNavIndex==3}">
+						<ul class="lists">
+				<div class="invite_content-top1">
+<!-- <br/> -->
+<!-- 邀请好友可以获得好友投资金额10%奖励，好友推荐的好友参与，奖励您3%<br/> -->
+
+					 
+				</div>
+				<div class="aui-card">
+					<div class="aui-card-title"><span class="aui-card-title-line"></span>邀请好友</div>
+					<div class="aui-card-main" style="padding: 0;">
+						<ul class="aui-lists">
+
+							<li class="aui-list aui-list-left aui-list-disabled1111">
+								<div class="aui-list-left">免费申请邀请码成为推广员，可以享受邀请奖励。</div>
+							</li>						
+						
+							<li class="aui-list">
+								<div class="aui-list-left">邀请好友可以获得好友投资金额10%奖励</div>
+							</li>
+							
+							<li class="aui-list">
+								<div class="aui-list-left">好友推荐的好友参与，奖励您3%</div>
+								<div class="aui-list-left-desc">举例：您邀请好友A投入1BNB 会奖励您0.1BNB  A邀请B投入1BNB 会奖励您0.03BNB</div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+
+							<div class="aui-lists">
+								<div class="aui-list" onclick="regcode()">
+									<div class="aui-list-left"><i class="iconfont aui-btn-right iconerweima"></i>申请邀请码</div>
+									<div class="aui-list-right"><i class="iconfont aui-btn-right iconright1"></i></div>
+								</div>
+ 
+							</div>
+
+	    		<div class="clipboard-warp">
+					<div id="text" class="border">
+						<input type="text" name="invitecode" id="invitecode" @input="specifiName($event)" @change ="specifiName($event)"  v-on:input ="copy" placeholder="请先申请邀请码" value="" />					
+					</div>	
+					<div class="aui-btn copy-btn" @click.stop="copy()"><i class="iconfont iconcopy"></i><span>复制</span></div>
+				</div>							
+							
+							
+						</ul>
+					</div>
+					<!-- <div class="page-list" :class="{'active' : currentNavIndex==4}"> -->
+						<!-- <ul class="lists"> -->
+							<!-- <p>4</p> -->
+						<!-- </ul> -->
+					<!-- </div> -->
+					<!-- <div class="page-list" :class="{'active' : currentNavIndex==5}"> -->
+						<!-- <ul class="lists"> -->
+							<!-- <p>5</p> -->
+						<!-- </ul> -->
+					<!-- </div> -->
+				</div>
+
+
+			<footer class="aui-footer row-before">
+				<div class="aui-footer-list active" onclick="aui.openWin('index.html')"><i class="iconfont iconselect_fill"></i><p>首页</p></div>
+				
+				<div class="aui-footer-list"  index="3" @click.stop="changeNav($event)" ><i class="iconfont icontamplate"></i><p>邀请</p></div>				
+				
+				<a class="aui-footer-list" target="_blank" href="http://ok.kill0.club/OKFomo3d.pdf"><i class="iconfont iconheadlines"></i><p>白皮书</p></a>
+				
+				<a class="aui-footer-list" target="_blank" href="#"><i class="iconfont icondoc"></i><p>文档</p></a>
+				
+
+			</footer>
+				
+				
+
+			</div> <!--/app-->
+
+		</div>
+	</body>
+	
+
+
+
+
+
+
+
+		<script type="text/javascript" charset="utf-8" src="https://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
+	    <script type="text/javascript" src="lib/vue.min.js"></script>
+	    <script type="text/javascript" src="lib/jquery/jquery-2.1.3.min.js"></script>
+
+ 
+		<script type="text/javascript" src="lib/swiper/swiper.min.js" charset="utf-8"></script>		
+		
+	    <!-- <script type="text/javascript" src="static/js/aui.min.js"></script> -->
+
+		<script type="text/javascript" src="static/js/aui.min.js"></script>		
+		<script type="text/javascript" src="static/js/aui.popover.js"></script>		
+		<script type="text/javascript" src="static/js/aui.getdate.js"></script>	
+	
+
+		<script src="/js/clipboard.min.js"></script>
+		<script src="/js/web3.min.js"></script>		
+		<script type="text/javascript" src="/js/key.js?a=123423"></script>
+		<script type="text/javascript" src="/js/language.js"></script>
+
+		<script type="text/javascript" src="/js/bignumber.min.js"></script>
+		<script type="text/javascript" src="/js/abi.js?a=1112"></script>
+		<script type="text/javascript" src="/js/service.js"></script>
+		<script type="text/javascript" src="/js/airdrop.js?a=12111"></script>
+
+
+
+		<script type="text/javascript">
+			var web3js;
+			var web3;
+			var defaultaccount='';
+			var address='';
+			var id;
+			var contract = '0xB0dBf009458759b7d5905D889e873b6127567958'; //K0
+			
+			var uid;
+			var username;
+			var contract2 = '0x8c8B5427eac0a926B693Bb1eCC63dFc629B582bA'; //3d
+			
+			var contractOK = '0x218Ce51f3DD42e77D82Ab1E6F360084Ff6d05DCb';//OK
+			
+			var hdxCI;
+			var hdxCIOK;
+			var hdxCI2;
+			var timers={};
+			var flag = true;
+			var decimals = 6;
+			var minerFee = "0.003";
+			var acceptAddress = contract;
+			var bili = 500000000000;
+			var receive = 0;
+
+            var RoundInfo;
+            
+            var buyprice;
+            
+            var PlayerInfo;
+	
+            var pay_amount = 0.001;
+            
+            var K0Price = 1;
+            
+            var OKPrice = 1;
+            
+            var Timeleft = 60;
+
+			
+			
+			
+			$(function() {
+				
+				$('.copySpan').attr('data-clipboard-text', contract);
+
+				
+				$('.balancegray').click(function() {
+					$(this).hide();
+					$('.balanceblue').show();
+					$('#useBalance').val(1);
+				})
+				$('.balanceblue').click(function() {
+					$(this).hide();
+					$('.balancegray').show();
+					$('#useBalance').val(0);
+				})
+				/*
+				$('.ant-menu-submenu-horizontal').hover(function() {
+					$('#s1Menu').show();
+				});*/
+				$('#s1Menu').mouseleave(function() {
+					$('#s1Menu').hide();
+				})
+				$('.ant-menu-submenu-horizontal').mouseover(function() {
+					$('#s1Menu').show();
+				})
+				$('.ant-alert-close-icon').click(function() {
+					$(this).parent().remove();
+				})
+				$('.qr-code').mouseover(function() {
+					$('.qr-code img').show();
+				})
+				$('.qr-code img').mouseleave(function() {
+					$(this).hide();
+				})
+				$('.mobile-icon').click(function() {
+					$('.ant-drawer-right').addClass('ant-drawer-open');
+					$('.ant-drawer-content-wrapper').css('width', '256px');
+				})
+				$('.ant-drawer-close').click(function() {
+					$('.ant-drawer-right').removeClass('ant-drawer-open');
+					$('.ant-drawer-content-wrapper').css('width', '0');
+				})
+				$('.qr-code').click(function(event) {
+					event.stopPropagation();
+					$('.qr-code img').show();
+				})
+				$('body').click(function() {
+					if (!$(".qr-code img").is(":hidden")) {
+						$(".qr-code img").hide();
+					}
+				});
+				$('.ant-modal-close').click(function() {
+					$('.ant-modal-mask').addClass('ant-modal-mask-hidden');
+					$('.ant-modal-wrap').hide();
+				})
+				setTimeout("initWallet()", 500);
+				//setTimeout("initWallet()", 2000);
+				var clipboard = new ClipboardJS('.copySpan');
+				clipboard.on('success', function(e) {
+					console.info('Action:', e.action);
+					console.info('Text:', e.text);
+					console.info('Trigger:', e.trigger);
+					e.clearSelection();
+					alert('Copy Success');
+				});
+				clipboard.on('error', function(e) {
+					console.error('Action:', e.action);
+					console.error('Trigger:', e.trigger);
+					alert('Copy fail');
+				});
+			})
+			
+			
+			
+			
+			
+			async function initWallet() {
+			   // alert(1);return;
+				console.log('initWallet');console.log(defaultaccount.length);
+				var web3Provider;
+				if(defaultaccount.length > 0){
+					//return;
+				}
+				if (window.ethereum) {
+					web3Provider = window.ethereum;
+					try {
+						//user allow
+						await window.ethereum.enable();
+					} catch (error) {
+						//not allow
+						//console.error("User denied account access")
+						alert("请先连接钱包");return;// please Auth
+					}
+				} else if (window.web3) {   //old MetaMask Legacy dapp browsers...
+					web3Provider = window.web3.currentProvider;
+				} else {
+					//web3Provider = new Web3.providers.HttpProvider('http://localhost:8545');
+					alert('请在钱包DAPP浏览器打开');return;//'download MetaMask or imtoken wallet'
+				}
+				web3js = web3 = new Web3(web3Provider);//web3js instince
+				//alert(1);
+				var MyContract=new web3js.eth.Contract(abi,contract);
+				hdxCI = MyContract.methods;
+
+				var MyContractOK=new web3js.eth.Contract(abi,contractOK);
+				hdxCIOK = MyContractOK.methods;
+
+				var MyContract2=new web3js.eth.Contract(fomo3d,contract2);
+				hdxCI2 = MyContract2.methods;
+
+
+                fomo3dContractInstance = new web3js.eth.Contract(fomo3d,contract2);
+
+				
+				var LastAccount='';
+				var tim=setInterval(function(){
+					web3js.eth.getAccounts(function (error, result) {
+						if (!error){
+							if (LastAccount != result[0]){
+								LastAccount=result[0];
+								get_info( result[0]);
+							}
+						}
+					});	    
+				},1000);
+				
+				
+			}
+			
+			
+		var info={
+			'user':{},
+			'sys':{},
+		};	
+		var amount = 0;
+		
+		
+		function get_info(addr){
+			defaultaccount =addr; 		
+ 
+			refid = getRef();
+			
+// 			$.ajax({url:"http://blindbox.kill0.club/api/",
+// 			type: "GET",
+// 			data: {action:'reg',addr:defaultaccount, refid:refid},
+// 			dataType: "json",	
+// 			success:function(result){
+ 
+// 			//$("#ref").val(reflink);
+// 			console.log(result);
+ 				
+														
+// 			}});			
+					
+					var len = defaultaccount.length;console.log('len:'+len);
+					var shortAddress = defaultaccount.substring(0, 8)+'...'+defaultaccount.substring(len-6);
+					
+ 
+					console.log(defaultaccount);//alert(defaultaccount);
+					$('.wallet_address').html(shortAddress);
+					
+                    //==================airDropTracker_===========================
+                    var getairDropTracker = fomo3dContractInstance.methods.airDropTracker_().call().then
+                    (
+                    
+                    function (res){
+                    
+                    console.log('airDropTracker_'+res);
+                    
+                    if(parseInt(res)<100) {res=100;}
+
+                    $('.top_airdrop_percent').html((res/1000*100).toFixed(2)+'%');
+                    $('.mid_airdrop_percent1').html((res/1000*100).toFixed(2)+'%');
+                   
+
+                    
+                    })
+
+
+
+                    
+                    
+                    //==================getTimeLeft===========================
+                    var getTimeLeft = fomo3dContractInstance.methods.getTimeLeft().call().then
+                    (
+                    
+                    function (res){
+                    
+                    console.log('getTimeLeft'+res);
+                    
+                    Timeleft = res;
+                    
+                    var timestamp = parseInt((new Date()).getTime()/1000);
+                    
+                    
+                    if(parseInt(res)>0){
+                    count_down(new Date(timestampToTime(timestamp+parseInt(res)).replace(/-/g, "/")));
+                    }else{
+                        
+                    count_down(new Date(timestampToTime(1650205080).replace(/-/g, "/")));    
+                        
+                    }
+                    
+                    
+                    
+                    })
+                    
+                    
+                    //==================getCurrentRoundInfo===========================
+                    var CurrentRoundInfo = fomo3dContractInstance.methods.getCurrentRoundInfo().call().then
+                    (
+                    
+                    function (res){
+                        
+                    RoundInfo =  res;    
+                    
+                    console.log('RoundInfo');
+                    
+                    console.log(res);
+                    
+                  
+                    
+                    $('.top_airdrop_amount').html(toETH0(RoundInfo[13]/1000));
+                    
+                    
+                    $('.mid_airdrop_amount').html(toETH3(RoundInfo[13]/1000));
+                    
+
+
+                    $('.prize_pool').html(toETH0(RoundInfo[5]));
+                    
+                    
+                    $('.team1_all').html(toETH0(RoundInfo[10]));
+                    $('.team2_all').html(toETH0(RoundInfo[11]));
+                    $('.team3_all').html(toETH0(RoundInfo[12]));
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    //console.log(RoundInfo[7]);
+                    
+ 
+                    
+                    })                    
+                    
+                    //==================getBuyPrice===========================
+                    var currentbuyprice = fomo3dContractInstance.methods.getBuyPrice().call().then
+                    (
+                    
+                    function (res){
+                        
+                    buyprice =  res;    
+                    
+                    console.log('buyprice:'+res);
+                    
+                    
+                    
+                    $('.getprice').html(toETH(res,7));
+                    
+
+ 
+                    
+                    })     	
+                    
+
+                    //==================isbuyTicket===========================
+                    var currentisbuyTicket = fomo3dContractInstance.methods.isbuyTicket(defaultaccount).call().then
+                    (
+                    
+                    function (res){
+                        
+                    isbuyTicket =  res;    
+                    
+                    console.log('isbuyTicket:'+res);
+                    
+                    if(isbuyTicket){
+                       
+                       isbuytext='(已支付)' 
+                        
+                    }
+                    else{
+                        
+                       isbuytext='(未支付)'  
+                    }
+                    
+                    
+                    $('.isbuyTicket').html(isbuytext);
+                    
+
+ 
+                    
+                    })     	
+
+
+                    //==================getPlayerInfoByAddress===========================
+                    var getPlayerInfoByAddress = fomo3dContractInstance.methods.getPlayerInfoByAddress(defaultaccount).call().then
+                    (
+                    
+                    function (res){
+                        
+                    PlayerInfo =  res;    
+                    
+                    console.log('getPlayerInfoByAddress:');
+                    
+                    console.log(res);
+                    
+                    uid = PlayerInfo[0];
+                    
+                    username= PlayerInfo[1];
+                    
+                    $('.myseeds').html(toETH0(PlayerInfo[2]));
+                    
+                    
+                    
+ 
+                    
+					if(uid>0){
+                    $('#invitecode').val('http://ok.kill0.club/?ref='+uid)
+					}
+					else{
+                    $('#invitecode').val('请先参与购买种子 然后申请')
+					}                    
+                    
+                    
+					if(uid>0&&username=='0x0000000000000000000000000000000000000000000000000000000000000000'){
+                    $('#invitecode').val('请先申请邀请码')
+					}                    
+                    
+
+                    
+                    console.log('uid'+uid);
+                    
+                    
+                    $('.top_seeds_count').html(toETH0(PlayerInfo[2]));
+                    $('.bigwin_income').html(toETH2(PlayerInfo[3]));
+                    $('.divide_income').html(toETH0(PlayerInfo[4]));
+                    $('.invite_income').html(toETH0(PlayerInfo[5]));
+                    $('.unwithdraw_income').html(toETH0(parseInt(PlayerInfo[3])+parseInt(PlayerInfo[4])+parseInt(PlayerInfo[5])));
+                    
+                    
+                    $('.all_divide').html(toETH0(parseInt(PlayerInfo[3])+parseInt(PlayerInfo[4])+parseInt(PlayerInfo[5])));
+                    
+                    
+                    
+                    $('.all_invest').html(toETH0(PlayerInfo[6]));
+                    
+                    
+
+                    
+                    
+                    
+
+ 
+                    
+                    }) 
+                    
+                    
+                    //
+                    
+                    
+ 		
+ 			
+					
+		}
+		
+
+
+
+function towei(amount){
+    
+    return  amount 
+    
+}
+
+
+
+function toETH3(amount){
+    
+    return  (amount/10**18).toFixed(3)
+    
+    //return parseInt(amount/10**18)
+    
+}
+
+
+
+
+function toETH0(amount){
+    
+    return  (amount/10**18).toFixed(4)
+    
+    //return parseInt(amount/10**18)
+    
+}
+
+
+
+function toETH2(amount){
+    
+    return (amount/10**18).toFixed(5)
+    
+}
+
+
+function toETH5(amount){
+    
+    return (amount/10**18).toFixed(5)
+    
+}
+		
+
+function toETH(amount,decimal){
+    
+    return (amount/10**18).toFixed(decimal)
+    
+}
+
+
+function getRef() {
+	//  search  return ?after  
+	var queryStr = window.document.location.search;
+	var reg = RegExp('ref=');
+	if(queryStr.match(reg)){
+		var ref = (queryStr.match(/(=)[^&]*/g))[0].substr(1);
+		
+		
+		setCookie('cookieref',ref,360)
+ 
+		return ref;
+	} else {
+		//setCookie('cookieref',1,360)	    
+		return '1'; 
+	}
+}
+
+
+
+var affcode = getRef();
+
+if(affcode==1){
+    
+affcode = getCookie('cookieref');    
+
+
+    
+}
+
+console.log('affcode:'+affcode);
+
+
+var team_index = 1; 
+
+
+
+function setCookie(cname,cvalue,exdays){
+    var d = new Date();
+    d.setTime(d.getTime()+(exdays*24*60*60*1000));
+    var expires = "expires="+d.toGMTString();
+    document.cookie = cname+"="+cvalue+"; "+expires;
+}
+
+
+function getCookie(cname){
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i].trim();
+        if (c.indexOf(name)==0) { return c.substring(name.length,c.length); }
+    }
+    return "";
+}
+
+
+
+
+function  select_pay_amount(buynum){
+
+
+var pay1= "1";
+var pay2= "10";
+var pay3= "100";
+var pay4= "1000";
+var pay5= "10000";
+
+
+$(".pay_amount"+pay1+'').removeClass('pay_active');
+
+$(".pay_amount"+pay2+'').removeClass('pay_active');
+
+$(".pay_amount"+pay3+'').removeClass('pay_active');
+
+$(".pay_amount"+pay4+'').removeClass('pay_active');
+
+$(".pay_amount"+pay5+'').removeClass('pay_active');
+
+
+$(".pay_amount"+buynum+'').addClass('pay_active');
+
+
+console.log(buynum);
+ 
+
+pay_amount = buynum*0.001
+
+
+console.log('select_pay_amount:'+pay_amount);
+
+
+
+}
+
+
+
+select_pay_amount(100)
+
+
+ 
+
+function select_pay(pay){
+
+var pay1= "BNB";
+var pay2= "K0";
+var pay3= "OK";
+
+$("."+pay1+'_paytype').removeClass('pay_active');
+
+$("."+pay2+'_paytype').removeClass('pay_active');
+
+$("."+pay3+'_paytype').removeClass('pay_active');
+
+
+$("."+pay+'_paytype').addClass('pay_active');
+
+ console.log(pay);
+ 
+ aui.toast({msg: "请稍后在钱包确认支付... "});
+
+
+ if(pay=='OK'){
+ 
+
+//=================test=================
+var spender = contract2; 
+
+//pay_amount = 0.1;
+//=================test=================
+ 
+OKContractInstance = new web3js.eth.Contract(abi,'0x218Ce51f3DD42e77D82Ab1E6F360084Ff6d05DCb');
+
+
+pancake_ContractInstance = new web3js.eth.Contract(abi3,'0x10ED43C718714eb63d5aA57B78B54704E256024E');
+
+
+//==================allowance===========================
+var result = OKContractInstance.methods.allowance(defaultaccount,spender).call().then
+(
+
+function (res){
+
+console.log(res);
+ 
+ if(res<=1){
+ 
+ 
+ aui.toast({msg: "请先确认授权OK 然后再次点击支付门票"});
+ contract_OK('approveMax',"'"+spender+"'",0); 
+ 
+ 
+ } else {
+ 
+
+
+ //收款地址
+ var pay_to =  contract2;
+
+
+
+run_func2('buyTicket','',0);
+
+
+return 1;
+
+
+OKContractInstance = new web3js.eth.Contract(abi,'0x218Ce51f3DD42e77D82Ab1E6F360084Ff6d05DCb');
+
+
+pancake_ContractInstance = new web3js.eth.Contract(abi3,'0x10ED43C718714eb63d5aA57B78B54704E256024E');
+
+ 
+
+pancake_ContractInstance.methods.getAmountsIn('1000000000000000',["0x218Ce51f3DD42e77D82Ab1E6F360084Ff6d05DCb","0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"]).call().then
+(
+
+function (res){ 
+
+
+console.log('OKPrice 0.001= ' + res[0]);
+
+K0Price = res[0];
+
+
+//查询余额 
+var result = OKContractInstance.methods.balanceOf(defaultaccount).call().then
+(
+
+function (res){ 
+
+console.log("balanceOf "+defaultaccount+"   "+res);
+
+ 
+
+ //查询价格，计算所需数量
+ //K0pay_amount = K0Price1.plus(0).toString(10)  ;
+ 
+ K0pay_amount_num =  new BigNumber(pay_amount/0.001 * K0Price);
+ 
+ K0pay_amount = K0pay_amount_num.plus(0).toString(10)  ;
+ 
+ 
+ console.log(' BNB: '+ pay_amount +' OK OK pay_amount '+K0pay_amount);
+ 
+ 
+ //查询用户余额是否足够 
+ if(res>=parseInt(K0pay_amount)){
+ 
+ 
+ //余额足够 支付划转  合约内 自动转账
+  
+ //contract_K0('transferFrom',"'"+defaultaccount+"','"+pay_to+"','"+K0pay_amount+"'",0);
+ 
+ //主动转账
+ 
+ contract_OK('transfer',"'"+pay_to+"','"+K0pay_amount+"'",0);
+ 
+ aui.toast({msg: "请确认支付后 等待链上确认"});
+ 
+ 
+ }
+ else{
+ 
+ 
+ //余额不够 提示余额不足
+ aui.toast({msg: "OK余额不足 请先购买OK"});
+ 
+ 
+ }
+ 
+ 
+
+
+  }
+
+);
+
+
+
+
+
+})
+
+
+
+
+ 
+ 
+ }
+
+
+}
+
+) 
+
+
+
+//==================allowance===========================
+ 
+
+ 
+ 
+ 
+
+ 
+
+ 
+
+
+
+
+
+//console.log(result);
+
+//console.log(hdxCI.balanceOf(defaultaccount));
+ 
+ 
+
+ 
+ 
+ 
+ return 
+ }
+ 
+ 
+ 
+ if(pay=='K0'){
+ 
+
+//=================test=================
+var spender = contract2; 
+
+
+
+
+//pay_amount = 0.1;
+//=================test=================
+ 
+K0ContractInstance = new web3js.eth.Contract(abi,'0xB0dBf009458759b7d5905D889e873b6127567958');
+
+
+pancake_ContractInstance = new web3js.eth.Contract(abi3,'0x10ED43C718714eb63d5aA57B78B54704E256024E');
+
+
+//==================allowance===========================
+var result = K0ContractInstance.methods.allowance(defaultaccount,spender).call().then
+(
+
+function (res){
+
+console.log(res);
+ 
+ if(res<=1){
+ 
+ 
+ aui.toast({msg: "请先确认授权K0 然后再次点击支付门票"});
+ contract_K0('approveMax',"'"+spender+"'",0); 
+ 
+ 
+ } else {
+ 
+
+
+ //收款地址
+ var pay_to =  contract2;
+
+run_func2('buyTicket','',0);
+
+
+return 1;
+
+
+K0ContractInstance = new web3js.eth.Contract(abi,'0xB0dBf009458759b7d5905D889e873b6127567958');
+
+
+pancake_ContractInstance = new web3js.eth.Contract(abi3,'0x10ED43C718714eb63d5aA57B78B54704E256024E');
+
+ 
+
+pancake_ContractInstance.methods.getAmountsIn('1000000000000000',["0xB0dBf009458759b7d5905D889e873b6127567958","0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"]).call().then
+(
+
+function (res){ 
+
+
+console.log('K0Price 0.001= ' + res[0]);
+
+K0Price = res[0];
+
+
+//查询余额 
+var result = K0ContractInstance.methods.balanceOf(defaultaccount).call().then
+(
+
+function (res){ 
+
+console.log("balanceOf "+defaultaccount+"   "+res);
+
+ 
+
+ //查询价格，计算所需数量
+ //K0pay_amount = K0Price1.plus(0).toString(10)  ;
+ 
+ K0pay_amount_num =  new BigNumber(pay_amount/0.001 * K0Price);
+ 
+ K0pay_amount = K0pay_amount_num.plus(0).toString(10)  ;
+ 
+ 
+ console.log(' BNB: '+ pay_amount +' K0 K0pay_amount '+K0pay_amount);
+ 
+ 
+ //查询用户余额是否足够 
+ if(res>=parseInt(K0pay_amount)){
+ 
+ 
+ //余额足够 支付划转  合约内 自动转账
+  
+ //contract_K0('transferFrom',"'"+defaultaccount+"','"+pay_to+"','"+K0pay_amount+"'",0);
+ 
+ //主动转账
+ 
+ contract_K0('transfer',"'"+pay_to+"','"+K0pay_amount+"'",0);
+ 
+ aui.toast({msg: "请确认支付后 等待链上确认"});
+ 
+ 
+ }
+ else{
+ 
+ 
+ //余额不够 提示余额不足
+ aui.toast({msg: "K0余额不足 请先购买K0"});
+ 
+ 
+ }
+ 
+ 
+
+
+  }
+
+);
+
+
+
+
+
+})
+
+
+
+
+ 
+ 
+ }
+
+
+}
+
+) 
+
+
+
+//==================allowance===========================
+ 
+
+ 
+ 
+ 
+
+ 
+
+ 
+
+
+
+
+
+//console.log(result);
+
+//console.log(hdxCI.balanceOf(defaultaccount));
+ 
+ 
+
+ 
+ 
+ 
+ return 
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  if(pay=='BNB'){
+
+ 
+ 
+ 
+ 
+ console.log('BNB pay...');
+ 
+ pay_BNB(pay_amount);
+ 
+ return 
+ }
+ 
+ 
+ }	
+
+//select_pay("K0") 
+
+function pay_BNB(pay_amount){
+
+
+
+ 
+pay_amount = (pay_amount).toFixed(6)
+
+console.log('pay_amount'+pay_amount);	
+				
+//run_func2('registerNameXaddr','"hhh","0x0000000000000000000000000000000000000000","true"',web3js.utils.toWei(pay_amount, 'ether'));
+
+aui.toast({msg: "请确认支付后 等待链上确认"});
+
+run_func2('buyXid',"'"+affcode+"','"+team_index+"'",web3js.utils.toWei(pay_amount, 'ether'));
+
+
+console.log('buyXid',"'"+affcode+"','"+team_index+"'",web3js.utils.toWei(pay_amount, 'ether'));
+
+console.log('BNB pay_amount...' +  pay_amount);
+
+
+}		
+ 
+
+
+
+
+function regcode(){
+
+
+var regname =  "user"+uid;
+
+if(uid<1){
+    
+ aui.toast({msg: "请先参与购买种子 才可以申请"});
+
+ return;   
+    
+}
+
+
+
+if(username!='0x0000000000000000000000000000000000000000000000000000000000000000'){
+    
+ aui.toast({msg: "您已经申请过 无需重复申请"});
+
+ return;   
+    
+}
+
+
+aui.toast({msg: "请支付gas费  链上确认后即可注册成功"});
+
+
+run_func2('registerNameXID',"'"+regname+"','"+affcode+"','true'",web3js.utils.toWei('0.001', 'ether'));
+
+
+console.log('registerNameXID',"'"+regname+"','"+affcode+"','true'",web3js.utils.toWei('0.001', 'ether'));
+
+
+
+}
+
+
+
+
+
+
+
+
+function select_team(team){
+
+var team1= "snake";
+var team2= "rooster";
+var team3= "ox";
+
+$("."+team1+'_team').removeClass('team_active');
+
+$("."+team2+'_team').removeClass('team_active');
+
+$("."+team3+'_team').removeClass('team_active');
+
+
+$("."+team+'_team').addClass('team_active');
+
+
+
+switch (team) {
+    case "snake":
+        team = 1;
+        break;
+    case "rooster":
+        team = 2;
+         break;
+    case "ox":
+        team = 3;
+         break;
+
+} 
+
+
+
+
+ console.log('select_team'+team);
+ 
+ 
+ 
+ 
+ 
+ team_index = team;
+ 
+ 
+ }
+ 
+ 
+ 
+select_team("rooster") 
+
+
+ 
+	
+function withdraw(){
+
+
+ console.log('withdraw');
+ 
+ 
+ aui.toast({msg: "请确认支付gas后完成提现"});
+ 
+ run_func2('withdraw','',0);
+
+
+ //run_func2('withdraw','',web3js.utils.toWei('0.001', 'ether'));
+  
+ 
+ }
+	
+function add0(num){
+
+
+
+if(parseInt(num)<10){  return "0"+num; }
+
+else 
+
+{return num;}
+
+
+
+
+
+}	
+
+
+function timestampToTime(timestamp) {
+        var date = new Date(timestamp * 1000);//时间戳为10位需*1000，时间戳为13位的话不需乘1000
+        var Y = date.getFullYear() + '-';
+        var M = (date.getMonth()+1 < 10 ? '0'+(date.getMonth()+1) : date.getMonth()+1) + '-';
+        var D = date.getDate() + ' ';
+        var h = add0(date.getHours()) + ':';
+        var m = add0(date.getMinutes()) + ':';
+        var s = add0(date.getSeconds());
+        return Y+M+D+h+m+s;
+    }
+	
+    //timestampToTime(1403058804);
+    //console.log(timestampToTime(1403058804));//2014-06-18 10:33:24
+
+
+	
+	
+ function count_time(endtime) {
+    var nowtime = new Date(); //获取当前时间
+    
+    //nowtime = nowtime.replace(/\-/g, "/"); 
+    
+     //var d = new Date(nowtime);
+     
+     //d = d.getFullYear() > 0 ? d : new Date(Date.parse(nowtime.replace(/-/g, "/")));
+     
+     //console.log(d);
+     
+         
+    var lefttime = endtime.getTime() - nowtime.getTime(),  //距离结束时间的毫秒数
+        leftd = Math.floor(lefttime/(1000*60*60*24)),  //计算天数
+        lefth = Math.floor(lefttime/(1000*60*60)%24),  //计算小时数
+        leftm = Math.floor(lefttime/(1000*60)%60),  //计算分钟数
+        lefts = Math.floor(lefttime/1000%60);  //计算秒数
+    //return leftd + "天" + lefth + ":" + leftm + ":" + lefts;  //返回倒计时的字符串
+	//console.log(endtime);
+	//console.log(lefts);
+	
+	if(lefth<0){lefth=0;}
+	if(leftm<0){leftm=0;}
+	if(lefts<0){lefts=0;}
+	
+	return   lefth + ":" + add0(leftm) + ":" + add0(lefts);  //返回倒计时的字符串
+	
+}
+	
+	
+	
+	function count_down(endtime){
+	
+ 
+	setInterval (function () {
+		document.getElementById("count_down1").innerHTML = count_time(endtime);
+		document.getElementById("count_down2").innerHTML = count_time(endtime);
+	}, 1000);   	
+		
+	
+	}
+	
+	
+
+	
+	
+	
+		
+		//纵向滚动初始化=>借助swiper轮播图
+		function initNotice(){
+			 
+			var swiper = new Swiper('.swiper-container', {
+				slidesPerView :'auto',
+				autoplay: 1500,
+				direction:'vertical',
+				grabCursor:true,
+				autoplayDisableOnInteraction:false,
+				mousewheelControl:true,
+				autoHeight:true,
+				speed: 1000,
+				loop: true
+			});
+		}		
+
+
+//menu 
+
+
+function setmenu(){			
+			var lists = document.querySelectorAll(".aui-list");
+			for(var i = 0; i < lists.length; i++){
+				aui.touchDom(lists[i], "#EFEFEF");
+			}
+			//打开菜单弹窗(右上角——>按钮下方)
+			document.querySelector(".aui-header-right").addEventListener("click", function(){
+				aui.popover.open({
+					warp: '.aui-header-right',
+					items: [
+						{name: 'OK文档', icon: 'iconchakan-yunpan', iconColor: '#8BC34A'},
+						{name: '白皮书', icon: 'iconGit', iconColor: '#909090'},
+						<!-- {name: 'test', icon: 'iconcsdn', iconColor: '#d81e06'}, -->
+						<!-- {name: 'help', icon: 'iconerweima', iconColor: '#12986D'}, -->
+					],
+					mask: true,
+					location: 'bottom'
+				},function(ret){
+					//console.log(ret);
+					switch (ret.index){
+						case 0:
+							aui.openWin('http://ok.kill0.club/');
+							break;
+						case 1:
+							aui.openWin('http://ok.kill0.club/OKFomo3d.pdf');
+							break;
+						<!-- case 2: -->
+							<!-- aui.openWin('https://me.csdn.net/weixin_43838488'); -->
+							<!-- break; -->
+						<!-- case 3: -->
+							<!-- aui.openWin('pages/template/qrcode/QRCode.html'); -->
+							<!-- break; -->
+						default:
+							aui.toast({msg: ret.el.querySelector("span").innerHTML});
+							break;
+					}
+				})
+			});
+		}
+		
+
+
+		
+		
+
+	   		window.onload = function(){				
+	   			apiready();
+				
+				initNotice();
+				
+
+				
+	   		}
+	   		apiready = function() {
+	   			var vm = new Vue({
+	   				el: "#app",
+	   				data: {							   					
+						currentNavIndex: 0,
+						text: '',
+	   				},
+	   				created: function(){
+	   					var _this = this;
+	   				},
+	   				mounted: function() {
+	   					var _this = this;	
+						//border position
+						aui.resetNavBorder(".aui-nav", '.aui-nav-item', '.aui-nav-border', 0); 
+
+	   					var _this = this;	
+						//invitecode
+						
+						if(uid>0){
+						_this.text = 'http://ok.kill0.club/?ref='+uid;    
+						}
+						else{
+						 _this.text = '';   
+						}
+						
+						
+	   					//aui.touchDom(document.querySelector('.copy-btn'), "#FFF", "var(--aui-blue)", "1px solid var(--aui-blue)");							
+						
+	   	            },
+	   	            updated: function () {
+	   	                var _this = this;
+	   	                _this.$nextTick(function () {
+	   		
+	   	                })
+	   	            },
+	   	            methods: {
+                      specifiName(e) {
+                        var that = this;
+                        var val = e.target.value;
+                        console.log(val);
+                      },					
+						//copy
+						copy(){
+							var _this = this;	
+							//if(!aui.isDefine(_this.text)){aui.toast({msg: '请输入文字内容'}); return;}
+							copyurl = 'http://ok.kill0.club/?ref='+uid
+							aui.copy(copyurl);
+							console.log(copyurl);
+							if(uid>0){
+							aui.toast({msg: '复制成功'});
+							} else{
+							aui.toast({msg: '请先申请邀请码'});    
+							    
+							}
+						},
+						
+						changeNav(e){
+							//invitecode
+							//_this.text = 8888;
+							var _this = this,
+								
+								el = e.currentTarget,
+								index = Number($(el).attr("index"));
+							_this.currentNavIndex = index;
+							//设置导航栏底部选中底线位置
+							aui.resetNavBorder(".aui-nav", '.aui-nav-item', '.aui-nav-border', _this.currentNavIndex); 							
+						},					
+	   	            }
+	   			});
+	   		}
+
+
+			
+ 
+ $(document).ready(function(){
+     
+setmenu();
+
+
+
+
+<!-- $("#invitecode").val("2022888"); -->
+<!-- console.log($("#invitecode").val()); -->
+
+
+});	
+
+		
+		
+		
+		
+	</script>
+</html>

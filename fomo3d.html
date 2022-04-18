@@ -523,7 +523,7 @@
 				
 				<div class="aui-footer-list"  index="3" @click.stop="changeNav($event)" ><i class="iconfont icontamplate"></i><p>Invite</p></div>				
 				
-				<a class="aui-footer-list" target="_blank" href="http://ok.kill0.club/OKFomo3d.pdf"><i class="iconfont iconheadlines"></i><p>Whitepaper</p></a>
+				<a class="aui-footer-list" target="_blank" href="https://okoffice.github.io/fomo3d/OKFomo3d.pdf"><i class="iconfont iconheadlines"></i><p>Whitepaper</p></a>
 				
 				<a class="aui-footer-list" target="_blank" href="#"><i class="iconfont icondoc"></i><p>Docs</p></a>
 				
@@ -935,7 +935,7 @@
  
                     
 					if(uid>0){
-                    $('#invitecode').val('http://ok.kill0.club/?ref='+uid)
+                    $('#invitecode').val('https://okoffice.github.io/fomo3d/fomo3d.html?ref='+uid)
 					}
 					else{
                     $('#invitecode').val('Please participate in the purchase of seeds and apply')
@@ -1777,10 +1777,10 @@ function setmenu(){
 					//console.log(ret);
 					switch (ret.index){
 						case 0:
-							aui.openWin('http://ok.kill0.club/');
+							aui.openWin('https://okoffice.github.io/fomo3d/fomo3d.html');
 							break;
 						case 1:
-							aui.openWin('http://ok.kill0.club/OKFomo3d.pdf');
+							aui.openWin('https://okoffice.github.io/fomo3d/OKFomo3dEN.pdf');
 							break;
 						<!-- case 2: -->
 							<!-- aui.openWin('https://me.csdn.net/weixin_43838488'); -->
@@ -1828,7 +1828,7 @@ function setmenu(){
 						//invitecode
 						
 						if(uid>0){
-						_this.text = 'http://ok.kill0.club/?ref='+uid;    
+						_this.text = 'https://okoffice.github.io/fomo3d/fomo3d.html?ref='+uid;    
 						}
 						else{
 						 _this.text = '';   
@@ -1854,7 +1854,7 @@ function setmenu(){
 						copy(){
 							var _this = this;	
 							//if(!aui.isDefine(_this.text)){aui.toast({msg: '请输入文字内容'}); return;}
-							copyurl = 'http://ok.kill0.club/?ref='+uid
+							copyurl = 'https://okoffice.github.io/fomo3d/fomo3d.html?ref='+uid
 							aui.copy(copyurl);
 							console.log(copyurl);
 							if(uid>0){

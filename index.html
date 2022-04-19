@@ -188,7 +188,7 @@
 												<div class="aui-grid aui-col-xs-5 pay_amount1" onclick="select_pay_amount('1')">
 													<div class="aui-grid-icon" style="margin:0"><i class="iconfont iconcolor" style="color: #ccc;"></i></div>
 													<!--<div class="aui-grid-text">X 1</div>-->
-													<div class="aui-grid-text pay_desc1">0.001 BNB</div>					
+													<div class="aui-grid-text pay_desc1">0.1 BNB</div>					
 	
 												</div>
 												
@@ -198,21 +198,21 @@
 												<div class="aui-grid aui-col-xs-5 pay_amount10" onclick="select_pay_amount('10')">
 													<div class="aui-grid-icon" style="margin:0"><i class="iconfont iconcolor" style="color: #ccc;"></i></div>
 													<!--<div class="aui-grid-text">0.01 BNB</div>-->
-													<div class="aui-grid-text pay_desc10">0.01 BNB</div>													
+													<div class="aui-grid-text pay_desc10">0.2 BNB</div>													
 												</div>
 												
 												
 												<div class="aui-grid aui-col-xs-5 pay_amount100" onclick="select_pay_amount('100')">
 													<div class="aui-grid-icon" style="margin:0"><i class="iconfont iconcolor" style="color: #ccc;"></i></div>
 													<!--<div class="aui-grid-text">X 100</div>-->
-													<div class="aui-grid-text pay_desc100">0.1 BNB</div>													
+													<div class="aui-grid-text pay_desc100">1 BNB</div>													
 												</div>
 												
 
 												<div class="aui-grid aui-col-xs-5 pay_amount1000" onclick="select_pay_amount('1000')">
 													<div class="aui-grid-icon" style="margin:0"><i class="iconfont iconcolor" style="color: #ccc;"></i></div>
 													<!--<div class="aui-grid-text">X 1000</div>-->
-													<div class="aui-grid-text pay_desc1000">1 BNB</div>													
+													<div class="aui-grid-text pay_desc1000">2 BNB</div>													
 												</div>												
 
 
@@ -1132,6 +1132,27 @@ console.log(buynum);
  
 
 pay_amount = buynum*0.001
+	
+	
+	
+switch (buynum) {
+    case "1":
+        pay_amount = 0.1;
+        break;
+    case "10":
+        pay_amount = 0.2;
+         break;
+    case "100":
+        pay_amount = 1;
+         break;
+    case "1000":
+        pay_amount = 2;
+         break;
+    case "10000":
+        pay_amount = 10;
+         break;
+} 
+
 
 
 console.log('select_pay_amount:'+pay_amount);

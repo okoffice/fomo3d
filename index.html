@@ -135,7 +135,7 @@
 													<p class="aui-noticebar-text">恭喜0x...6784获得空投3.37 BNB</p>
 												</div>
 												<div class="swiper-slide">
-													<p class="aui-noticebar-text">最新玩家：<span class="last_player"></></p>
+													<p class="aui-noticebar-text">欢迎最新玩家：<span class="last_player"></></p>
 												</div>
 											</div>
 										</div>
@@ -837,7 +837,7 @@
                     
                   
 		  
-		   $('.last_player').html( RoundInfo[7] );
+		    $('.last_player').html('0x....'+(RoundInfo[7]).substr(-6, 6));
                     
                     $('.top_airdrop_amount').html(toETH0(RoundInfo[13]/1000));
                     

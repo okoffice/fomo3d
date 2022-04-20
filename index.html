@@ -128,12 +128,12 @@
 									<div class="aui-noticebar-texts">
 										<div class="swiper-container">
 											<div class="swiper-wrapper">
-												<div class="swiper-slide">
+<!-- 												<div class="swiper-slide">
 													<p class="aui-noticebar-text">K0/OK FOMO3D游戏于2022/04/17 22:18:00正式上线</p>
 												</div>
 												<div class="swiper-slide">
 													<p class="aui-noticebar-text">恭喜0x...6784获得空投3.37 BNB</p>
-												</div>
+												</div> -->
 												<div class="swiper-slide">
 													<p class="aui-noticebar-text">欢迎最新玩家：<span class="last_player"></></p>
 												</div>
@@ -185,34 +185,34 @@
 						<div class="aui-card-title"><span class="aui-card-title-line"></span>1购买种子数量  当前价格@<img   style="width:18px;margin-left:8px;vertical-align:middle" src="static/img/BNB.png" alt=""/> <span class="getprice">...</span>  </div>
 
 							<div class="aui-grids" >
- 												<!--<div class="aui-grid aui-col-xs-5 pay_amount1" onclick="select_pay_amount('1')">
+												<div class="aui-grid aui-col-xs-5 pay_amount1" onclick="select_pay_amount('1')">
 													<div class="aui-grid-icon" style="margin:0"><i class="iconfont iconcolor" style="color: #ccc;"></i></div>
-													 <div class="aui-grid-text">X 1</div> 
-													<div class="aui-grid-text pay_desc1">0.1 BNB</div>					
+													<!--<div class="aui-grid-text">X 1</div>-->
+													<div class="aui-grid-text pay_desc1">0.001 BNB</div>					
 	
-												</div> -->
+												</div>
 												
  
 												
 												
-												<!--<div class="aui-grid aui-col-xs-5 pay_amount10" onclick="select_pay_amount('10')">
+												<div class="aui-grid aui-col-xs-5 pay_amount10" onclick="select_pay_amount('10')">
 													<div class="aui-grid-icon" style="margin:0"><i class="iconfont iconcolor" style="color: #ccc;"></i></div>
-													<div class="aui-grid-text">0.01 BNB</div>
-													<div class="aui-grid-text pay_desc10">0.2 BNB</div>													
-												</div>-->
+													<!--<div class="aui-grid-text">0.01 BNB</div>-->
+													<div class="aui-grid-text pay_desc10">0.01 BNB</div>													
+												</div>
 												
 												
 												<div class="aui-grid aui-col-xs-5 pay_amount100" onclick="select_pay_amount('100')">
 													<div class="aui-grid-icon" style="margin:0"><i class="iconfont iconcolor" style="color: #ccc;"></i></div>
 													<!--<div class="aui-grid-text">X 100</div>-->
-													<div class="aui-grid-text pay_desc100">1 BNB</div>													
+													<div class="aui-grid-text pay_desc100">0.1 BNB</div>													
 												</div>
 												
 
 												<div class="aui-grid aui-col-xs-5 pay_amount1000" onclick="select_pay_amount('1000')">
 													<div class="aui-grid-icon" style="margin:0"><i class="iconfont iconcolor" style="color: #ccc;"></i></div>
 													<!--<div class="aui-grid-text">X 1000</div>-->
-													<div class="aui-grid-text pay_desc1000">2 BNB</div>													
+													<div class="aui-grid-text pay_desc1000">1 BNB</div>													
 												</div>												
 
 
@@ -221,8 +221,6 @@
 													<!--<div class="aui-grid-text">X 10000</div>-->
 													<div class="aui-grid-text pay_desc10000">10 BNB</div>													
 												</div>	
-
-
  
 
 												
@@ -1156,7 +1154,7 @@ switch (buynum) {
 } 
 
 
-
+pay_amount = buynum*0.001;
 console.log('select_pay_amount:'+pay_amount);
 
 

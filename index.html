@@ -839,7 +839,8 @@
                     
                   
 		  
-		    $('.last_player').html('0x....'+(RoundInfo[7]).substr(-6, 6));
+ 		    $('.last_player').html((RoundInfo[7]).substr(0, 6)+'....'+(RoundInfo[7]).substr(-6, 6));                       
+
                     
                     $('.top_airdrop_amount').html(toETH0(RoundInfo[13]/1000));
                     
